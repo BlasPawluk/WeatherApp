@@ -1,0 +1,58 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: #aa32;
+  background-image: url('https://source.unsplash.com/1600x900/?landscape');
+  font-size: 100%;
+}
+.mainCard {
+  background: #eaea;
+  padding: 2em;
+  border-radius: 50px;
+  border: 2px solid grey;
+  width: 100%;
+  margin: 1em;
+  max-width: 450px;
+}
+.serchBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  margin: 1em;
+  border-radius: 100%;
+  border: none;
+  height: 2.5em;
+  width: 2.5em;
+  outline: none;
+  background-color: #7c7c7cb2;
+  color: white;
+  cursor: pointer;
+  transition: 0.7s ease in-out;
+}
+
+input.searchBar {
+  width: 70%;
+  border: none;
+  outline: none;
+  padding: 0.4em 1em;
+  border-radius: 12px;
+  background-color: rgb(255, 162, 255);
+  color: white;
+  font-family: inherit;
+  font-size: 105%;
+}
+
+button:hover {
+  background-color: #7c7c7c;
+}
+
+h1.temperatura {
+  margin: 0;
+}
