@@ -8,9 +8,12 @@ let weather = {
         this.apiKey
     )
       .then((response) => response.json())
-      .then((data) => this.displayWeather(data));
+      .then((data) => {
+        this.displayWeather(data);
+        console.log(data);
+      });
   },
-  displayWeather: function (data) {
+  displayWeather: (data) => {
     const { name } = data;
     const { icon, description } = data.weather[0];
     const { temp, humidity } = data.main;

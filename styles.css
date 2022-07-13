@@ -53,6 +53,13 @@ button:hover {
   background-color: #7c7c7c;
 }
 
-h1.temperatura {
+h1.temp {
   margin: 0;
+}
+
+.description {
+  text-transform: capitalize;
+}
+.flex {
+  display: flex;
 }
