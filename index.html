@@ -5,40 +5,59 @@
     <link rel="stylesheet" href="./styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap"
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@500&display=swap"
       rel="stylesheet"
     />
     <script src="./main.js" defer></script>
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Weather App</title>
   </head>
   <body>
     <div class="mainCard">
-      <input type="text" class="searchBar" placeholder="Ingrese una ciudad:" />
-      <button>
-        <svg
-          stroke="currentColor"
-          fill="none"
-          stroke-width="2"
-          viewBox="0 0 24 24"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          height="1.5em"
-          width="1.5em"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <circle cx="11" cy="11" r="8"></circle>
-          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-        </svg>
-      </button>
+      <div class="search">
+        <input type="text" class="searchBar" placeholder="Search:" />
+        <button>
+          <svg
+            stroke="currentColor"
+            fill="none"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            height="1.5em"
+            width="1.5em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+      </div>
       <div class="weather">
-        <h2 class="city">Temperatura en Buenos Aires:</h2>
+        <h2 class="city">Weather in: Buenos Aires</h2>
         <h1 class="temp">11ºC</h1>
         <div class="flex">
           <img
@@ -46,11 +65,10 @@
             alt=""
             class="icon"
           />
-          <div class="description">Nublado</div>
+          <div class="description">Cloudy</div>
         </div>
-      </div>
-        <div class="humidity">Humedad: 60%</div>
-        <div class="wind">Viento: 6.5km/h</div>
+        <div class="humidity">Humidity: 50%</div>
+        <div class="wind">Wind Speed: 8km/h</div>
       </div>
     </div>
   </body>
